@@ -5,12 +5,14 @@ import './App.css';
 interface Props{
   style?: {};
   className?: string;
+  shape?: string;
 }
 
-function Box ({style, className = '', ...rest}: Props){
+function Box ({style, className = '', shape = '', ...rest}: Props){
+  const shapeCls = shape && `box__${shape}`;
   return (
     <div
-      className={`box ${className}`.trim()} 
+      className={`box ${className} ${shapeCls}`.trim()} 
       style={{border: '3px solid tomato', ...style}}
       {...rest}
     >
