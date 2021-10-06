@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.box{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.box__green{
+  background: green;
+}
+
+.box__red{
+  background: red;
+}
+
+.box__blue{
+  background: blue;
+}
